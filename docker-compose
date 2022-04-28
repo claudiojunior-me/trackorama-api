@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: db
+    volumes: 
+      - ~/mongo/data:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin-cjunior
+      - MONGO_INITDB_ROOT_PASSWORD=Iz51UvDIyEQyqKW9
+      - MONGO_INITDB_DATABASE=trackorama
